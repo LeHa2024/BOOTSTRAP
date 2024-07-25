@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clone HTML dùng Bootstrap</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar navbar-expand bg-light border-bottom pt-3 fixed-top d-flex justify-content-center">
+      <a href="" class="navbar-logo ps-2">
+        <img src="https://vuighe3.com/assets/img/logo_v8.png" alt="" />
+      </a>
+      <div class="navbar-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark border rounded-pill pb-1 ms-5 me-3"
+              href=""
+              >Anime</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark border rounded-pill pb-1 me-3" href=""
+              >Movie</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark border rounded-pill mb-2 me-3" href=""
+              >English 1-1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark border rounded-pill pb-2 me-3" href=""
+              >BXH</a
+            >
+          </li>
+        </ul>
+        <div class="search-box">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control border rounded-pill ms-5 position-relative"
+              placeholder=""
+              size="40"
+            />
+            <button type="submit" class="button bg-white border-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-login d-flex justify-content-end me-1">
+          <div class="light-icon bg-light border rounded-pill mb-2 mx-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-brightness-high"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+              />
+            </svg>
+          </div>
+          <div class="circle-icon bg-light-5 border rounded-pill mb-2 mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg>
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+              />
+            </svg>
+          </div>
+          <div class="person-icon bg-light border rounded-pill mblank-2 mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+    </svg>
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+              />
+            </svg>
+          </div>
+      </div>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <a href="">
+            <img src="https://s199.imacdn.com/vg/2024/04/06/da3e65af5854a3f9_08bd663f6f9a0c11_124949817124189673118684.jpg" class="d-block w-100" alt="...">
+        </a>
+      
+    </div>
+    <div class="carousel-item">
+        <a href="">
+            <img src="https://s199.imacdn.com/vg/2024/07/08/3707fe3e00266cc3_6228f599d8775e7c_131162917204497653118684.jpg" class="d-block w-100" alt="...">
+        </a>
+      
+    </div>
+    <div class="carousel-item">
+        <a href="">  <img src="https://s199.imacdn.com/vg/2024/04/08/b8339b61503cbd58_37c0bc1cdece3add_152314217125696638118684.jpg" class="d-block w-100" alt="..."></a>
+     
+    </div>
+    <div class="carousel-item">
+        <a href=""><img src="https://s199.imacdn.com/vg/2024/05/13/5797075a6c9a279e_4a5935c18f9139ec_225183317155682156118684.jpg" class="d-block w-100" alt="..."></a>
+      
+    </div>
+    <div class="carousel-item">
+        <a href="">
+            <img src="https://s199.imacdn.com/vg/2024/04/08/bd4520e021eeab24_ef7e896825ca9c21_182979817125684103118684.jpg" class="d-block w-100" alt="..."> </a>
+      
+    </div>
+    <div class="carousel-item">
+        <a href="">
+            <img src="https://s199.imacdn.com/vg/2024/07/08/0733d275e7a65e1c_f088bc0d25069390_197424717204493762118684.jpg" class="d-block w-100" alt="...">
+        </a>
+      
+    </div>
+    <div class="carousel-item">
+        <a href="">
+            <img src="https://s199.imacdn.com/vg/2024/04/13/c82ba3bb7d995c34_9f6badf51855c699_96715417130242988118684.jpg" class="d-block w-100" alt="...">
+        </a>
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-3">
+            <div class="headling">
+                <a href="">TẬP MỚI NHẤT</a>
+                </div>
+        </div>
+    </div>
+    <div class="row gx-2 gy-2">
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+       <img src="https://s199.imacdn.com/vg/2024/07/07/d0d3293bcf277220_c35110fa04a4a61b_57520172036213763.jpg" class="card-img" alt="...">
+         <div class="card-img-overlay">
+         <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+          <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+         </div>
+        </div>
+      </div>
+    </div>
+          </a>
+      </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/04/06/a7b7a7e4dacf259c_cf21c86b2eea3fc0_15364717123878897118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+        <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/22/33978b090d19fc91_b692cb54c4926ccc_5148317216175609459252.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+        <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+         </div>
+          </div>
+         </div>
+      </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+          <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2023/10/15/e75d0456e3b549d5_32dff896da27a7ec_19460216973184715185710.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+        <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+    </div>
+    <div class="row gx-2 gy-2 mt-1">
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/06/29/7d1764a4f888f739_9e2e9e2fa49f619a_55646171967770393.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+        <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/04/8f68d78fe09fc1b6_9f015d8ec33469e4_17213017200817481118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/04/a6592b2fdd729d15_838cc5b2306f7074_16652217200808891118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7 ">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7 ">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+    </div>
+    <div class="row gx-2 gy-2 mt-1">
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/08/cbb5067ae9f023fa_fcd879c73bc87e08_12940417204476693118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/08/d2a934c23d482454_c53ea5fee5210974_21179417203722192118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/01/12/eae8150e6fe063bf_3fc2090fe7613d15_19040617050257983118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+       </div>
+    </div>
+  </div>
+</div>
+          </a>
+            
+        </div>
+        <div class="col-3">
+          <a href="">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/01/0713fb771bf8c9c3_a8771854b17cb18d_17653117197748835118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white --bs-gradient">
+        <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+       <div class="movie-meta d-flex justify-content-between">
+            <p class="movie-episode fs-7">Tập 189-Ánh sáng sau cơn mưa</p>
+            <p class="movie-views fs-7">1374 lượt xem</p>
+          </div>
+        </div>
+      </div>
+   </div>
+          </a>
+            
+  </div>        
+</div>
+</div>
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-3">
+            <div class="headling">
+                <a href="">BỘ SƯU TẬP</a>
+                </div>
+        </div>
+    </div>
+  </div>  
+    <div class="container d-flex">
+      <div class="col-4 mt-1">
+        <div class="card position-relative g-0 ">
+    <img src="https://s199.imacdn.com/vg/2024/04/03/40090a46a7da0ef1_80e070ce96d5c820_14294017121300547118684.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      
+    </div>
+  </div>
+      </div>
+      <div class="col-4 ms-1 me-0">
+        <div class="row m-1 mt-0">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card position-relative ">
+    <img src="https://s199.imacdn.com/vg/2023/12/18/34300209fba3863f_d95555fb4f601c15_13396917028928171185710.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      
+    </div>
+  </div>
+          </div>
+          <div class="col-6 gx-1 gy-1">
+             <div class="card position-relative ">
+    <img src="https://s199.imacdn.com/vg/2023/09/21/d256e672999f49d3_e204e82b0f3b26f8_2820816953084767118684.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      
+    </div>
+  </div></div>
+        </div>
+        <div class="row m-1">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2023/01/30/68fa82b22b9d4965_d66e4431ce224ac7_2698216750634546118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+          </div>
+          <div class="col-6 gx-1 gy-1"> <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2022/09/02/a17fad944d3cecc5_5ab5fdd64a7f94fd_30967166205716499674.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div></div>
+        </div>
+      </div>
+      <div class="col-4 ms-1">
+        <div class="row m-1 mt-0">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card position-relative ">
+    <img src="https://s199.imacdn.com/vg/2023/06/08/9c495aa611ceaf69_27a9622389671c57_10813016862126526185710.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      
+    </div>
+  </div>
+          </div>
+          <div class="col-6 gx-1 gy-1">
+             <div class="card position-relative ">
+    <img src="https://s199.imacdn.com/vg/2023/03/02/d66102b20c0df87d_9d5a343f6acdf971_10896816777495647185710.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      
+    </div>
+  </div></div>
+        </div>
+        <div class="row m-1">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2022/06/10/09dd799dff4a355b_a6b32d115628ac50_40892165484315239674.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+          </div>
+          <div class="col-6 gx-1 gy-1"> <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2022/03/05/803583cba5d569c2_3c4ab828e8e763bd_117964164647297779674.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div></div>
+        </div>
+      </div>
+      
+    </div>
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-3">
+            <div class="headling">
+                <a href="">BẢNG XẾP HẠNG</a>
+                </div>
+        </div>
+    </div>
+  </div>  
+ <div class="container d-flex">
+      <div class="col-4 mt-1">
+        <div class="card2 position-relative g-0 ">
+    <img src="https://s199.imacdn.com/vg/2024/07/07/d0d3293bcf277220_c35110fa04a4a61b_57520172036213763.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <div class="movie-info">
+          <h1 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">1</h1>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="col-4 ms-1 me-0">
+        <div class="row m-1 mt-0">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card2 position-relative ">
+    <img src="https://s199.imacdn.com/vg/2024/05/13/91396293e0753e1b_c64599b5bca83046_17009217155688733118684.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">2</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+    </div>
+  </div>
+          </div>
+          <div class="col-6 gx-1 gy-1">
+             <div class="card2 position-relative ">
+    <img src="https://s199.imacdn.com/vg/2024/05/13/91396293e0753e1b_c64599b5bca83046_17009217155688733118684.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">3</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+    </div>
+  </div></div>
+        </div>
+        <div class="row m-1">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card2 position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/04/06/a7b7a7e4dacf259c_cf21c86b2eea3fc0_15364717123878897118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">6</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+  </div>
+</div>
+          </div>
+          <div class="col-6 gx-1 gy-1">
+             <div class="card2 position-relative ">
+  <img src="https://s199.imacdn.com/vg/2023/06/04/5c4ff1f01241fcc4_f0194ae221179b9f_7304516858897765185710.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">7</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+  </div>
+</div></div>
+        </div>
+      </div>
+      <div class="col-4 ms-1">
+        <div class="row m-1 mt-0">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card2 position-relative ">
+    <img src="https://s199.imacdn.com/vg/2019/11/28/b228f37ad34e99c3_c17388e0cbc7703d_15778215749473975185710.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">4</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+    </div>
+  </div>
+          </div>
+          <div class="col-6 gx-1 gy-1">
+             <div class="card2 position-relative ">
+    <img src="https://s199.imacdn.com/vg/2023/10/15/5ef8e9aeda33a806_3d7c64a2ceefb3dc_53926169731432333.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">5</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+    </div>
+  </div></div>
+        </div>
+        <div class="row m-1">
+          <div class="col-6 gx-1 gy-1">
+            <div class="card2 position-relative ">
+  <img src="https://s199.imacdn.com/vg/2023/10/17/0a1e3f6550d22ee0_cb076c75347295de_16078416974898363185710.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">8</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+  </div>
+</div>
+          </div>
+          <div class="col-6 gx-1 gy-1"> 
+            <div class="card2 position-relative ">
+  <img src="https://s199.imacdn.com/vg/2021/06/29/18d2e2d92334fdb5_d0fe7260203bdfe0_15273516249815073118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <div class="movie-info ">
+          <h2 class="movie-rank position-absolute start-0 top-0 end-0 text-danger">9</h2>
+          <h5 class="movie-title fs-6 pt-2 position-absolute start-0 bottom-0 end-0 text-white d-none">Boku no Manga</h5>
+         
+      </div>
+  </div>
+</div></div>
+        </div>
+      </div>
+      
+    </div>
+ <div class="container">
+    <div class="row pt-3">
+        <div class="col-3">
+            <div class="headling">
+                <a href="">ANIME MOVIE</a>
+                </div>
+        </div>
+    </div>
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-2"> 
+          <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2024/07/08/6d92299e64636e1a_298ac4a1f398a70c_16335617203720582118684.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2024/06/26/c088eedb2b816529_27031aaff77f50fd_13211717194065322118684.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2023/11/28/e282c2a94c0db4c9_5f2ef3ade7fba4a0_11261117011867269118684.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2024/06/06/04e126f1b78c8dd0_171dc34c134188c1_14564617176481616118684.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2024/05/21/a11f118c65f407a0_34771323741023e0_14290117162850201118684.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2024/05/21/31ac860b47fcec2e_ee10d1f2c8b701fa_13661417163020217118684.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> 
+  </div>
+ <div class="container">
+    <div class="row pt-3">
+        <div class="col-3">
+            <div class="headling">
+                <a href="">HÔM NAY XEM GÌ</a>
+                </div>
+        </div>
+    </div>
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-2"> 
+          <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2022/12/06/d7e3f49b72447eaa_bd4c6a5ccaf89b81_35291167032322933.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2022/08/20/e6870464dd3166ec_3fea6cc184680bc5_3049616609940766185710.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2022/12/08/ec6767de0ab5ebc4_3f34aa50f989a118_40763167047682783.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2022/12/08/3d0504b621a35900_3bebb4b949652641_42216167043370093.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2022/08/20/e6870464dd3166ec_3fea6cc184680bc5_3049616609940766185710.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card position-relative ">
+         <img src="https://s199.imacdn.com/vg/2022/12/06/c9c084d96a701f05_ed8ffeb1f3f3e775_45932167030510513.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+           <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white">
+          <h5 class="movie-title fs5 mb-1">Boku no Manga</h5>
+            <div class="movie-meta">
+              <p class="movie-views fs-7">1374 lượt xem</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="row pt-5">
+        <div class="col-3">
+            <div class="headling">
+                <a href="">TẤT CẢ ANIME</a>
+                </div>
+        </div>
+    </div>
+    <div class="row gx-2 gy-2">
+        <div class="col-3">
+      <div class="card position-relative ">
+       <img src="https://s199.imacdn.com/vg/2024/07/07/d0d3293bcf277220_c35110fa04a4a61b_57520172036213763.jpg" class="card-img" alt="...">
+         <div class="card-img-overlay">
+        
+      </div>
+    </div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/04/06/a7b7a7e4dacf259c_cf21c86b2eea3fc0_15364717123878897118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/22/33978b090d19fc91_b692cb54c4926ccc_5148317216175609459252.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2023/10/15/e75d0456e3b549d5_32dff896da27a7ec_19460216973184715185710.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+    </div>
+    <div class="row gx-2 gy-2 mt-1">
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/06/29/7d1764a4f888f739_9e2e9e2fa49f619a_55646171967770393.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/04/8f68d78fe09fc1b6_9f015d8ec33469e4_17213017200817481118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/04/a6592b2fdd729d15_838cc5b2306f7074_16652217200808891118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+    </div>
+    <div class="row gx-2 gy-2 mt-1">
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/08/cbb5067ae9f023fa_fcd879c73bc87e08_12940417204476693118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/08/d2a934c23d482454_c53ea5fee5210974_21179417203722192118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/01/12/eae8150e6fe063bf_3fc2090fe7613d15_19040617050257983118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card position-relative ">
+  <img src="https://s199.imacdn.com/vg/2024/07/01/0713fb771bf8c9c3_a8771854b17cb18d_17653117197748835118684.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>
+        </div>
+        
+</div>
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar-logo img {
+  width: 10rem;
+}
+.button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.3rem;
+  z-index: 2;
+}
+.person-icon,
+.light-icon,
+.circle-icon {
+  padding: 0.5rem;
+  margin-left: 3rem;
+}
+.navbar-login {
+  padding-left: 12rem;
+}
+.nav-link {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+.nav-link:hover a {
+  text-color: rgb(244, 41, 41);
+}
+.carousel {
+  margin: 0 auto;
+  padding: 0 7rem;
+}
+.headling a {
+  font-size: 1.5rem;
+  color: rgb(232, 13, 13);
+  text-decoration: none;
+}
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+.card {
+  overflow: hidden;
+}
+.card2 {
+  overflow: hidden;
+}
+.card img {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+.movie-rank {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+.card2:hover h2 {
+  opacity: 1;
+  transform: translate(10px, -10px) scale(1.1);
+}
+.card2:hover h1 {
+  opacity: 1;
+  transform: translate(20px, -10px) scale(1.1);
+}
+.movie-title {
+  transition: transform 0.3s, opacity 0.3s;
+}
+.card2:hover h5 {
+  display: inline-block;
+}
+.--bs-gradient {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
